@@ -38,4 +38,6 @@ IB_DESIGNABLE
 /// An array of UIActivity objects to add to the share sheet. Default is nil.
 @property (copy, nonatomic) NSArray *applicationActivities;
 
+@property (nonatomic, strong) UINavigationController *navigationController;
+
 @end
