@@ -17,8 +17,6 @@
 		1C6461081A3F6059002F5CEE /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C6461041A3F6059002F5CEE /* back.png */; };
 		1C6461091A3F6059002F5CEE /* forward-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C6461051A3F6059002F5CEE /* forward-landscape.png */; };
 		1C64610A1A3F6059002F5CEE /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C6461061A3F6059002F5CEE /* forward.png */; };
-		9312ADC81BBCC755007C1FD5 /* YABrowserNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9312ADC61BBCC755007C1FD5 /* YABrowserNavigationController.h */; settings = {ASSET_TAGS = (); }; };
-		9312ADC91BBCC755007C1FD5 /* YABrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9312ADC71BBCC755007C1FD5 /* YABrowserNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +33,6 @@
 		1C6461041A3F6059002F5CEE /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		1C6461051A3F6059002F5CEE /* forward-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-landscape.png"; sourceTree = "<group>"; };
 		1C6461061A3F6059002F5CEE /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
-		9312ADC61BBCC755007C1FD5 /* YABrowserNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YABrowserNavigationController.h; sourceTree = "<group>"; };
-		9312ADC71BBCC755007C1FD5 /* YABrowserNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YABrowserNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +51,6 @@
 			children = (
 				1C6460FA1A3F5F83002F5CEE /* Images */,
 				1C6460E01A3F5402002F5CEE /* Info.plist */,
-				9312ADC61BBCC755007C1FD5 /* YABrowserNavigationController.h */,
-				9312ADC71BBCC755007C1FD5 /* YABrowserNavigationController.m */,
 				1C6460E11A3F5402002F5CEE /* YABrowserViewController.h */,
 				1C6460F81A3F550E002F5CEE /* YABrowserViewController.m */,
 				1C2434D71A40A9D100DC8EA4 /* YABrowserViewController.podspec */,
@@ -95,7 +89,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C6460E21A3F5402002F5CEE /* YABrowserViewController.h in Headers */,
-				9312ADC81BBCC755007C1FD5 /* YABrowserNavigationController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +166,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9312ADC91BBCC755007C1FD5 /* YABrowserNavigationController.m in Sources */,
 				1C6460F91A3F550E002F5CEE /* YABrowserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

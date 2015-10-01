@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.summary         = 'Yet Another Browser WebView Controller.'
   s.platform        = :ios, "8.0"
   s.source          = { :git => 'https://github.com/nolanw/YABrowserViewController.git', :tag => "v#{s.version}" }
-  s.source_files    = 'YABrowserViewController.[hm], YABrowserNavigationController.[hm]'
+  s.source_files    = 'YABrowserViewController.[hm]'
   s.framework       = 'WebKit'
   s.resource_bundle = { "YABrowserViewController" => "Images/*" }
   s.requires_arc = true

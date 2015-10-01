@@ -86,7 +86,7 @@ static void CommonInit(YABrowserViewController *self)
     self.closeButton.accessibilityLabel = NSLocalizedStringFromTable(@"Close", @"YABrowserViewController", @"Modal presentation close button accessibility label");
     [self reloadBarButtonItems];
     
-    UINavigationController *navigation = self.navigationController ?: [[YABrowserNavigationController alloc] initWithRootViewController:self];
+    UINavigationController *navigation = self.navigationController ?: [[UINavigationController alloc] initWithRootViewController:self];
     
     navigation.hidesBarsOnSwipe = YES;
     [presentingViewController presentViewController:navigation animated:animated completion:completion];
@@ -95,7 +95,7 @@ static void CommonInit(YABrowserViewController *self)
 - (UINavigationController *)navigationController
 {
     if(!_navigationController){
-        _navigationController = [[YABrowserNavigationController alloc] initWithRootViewController:self];
+        _navigationController = [[UINavigationController alloc] initWithRootViewController:self];
     }
     return _navigationController;
 }

@@ -2,7 +2,6 @@
 
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
-#import "YABrowserNavigationController.h"
 
 /**
  A slimmed-down, poorer rendition of Safari. (Yet Another Browser View Controller)
@@ -39,6 +38,6 @@ IB_DESIGNABLE
 /// An array of UIActivity objects to add to the share sheet. Default is nil.
 @property (copy, nonatomic) NSArray *applicationActivities;
 
-@property (nonatomic, strong) YABrowserNavigationController *navigationController;
+@property (nonatomic, strong) UINavigationController *navigationController;
 
 @end
