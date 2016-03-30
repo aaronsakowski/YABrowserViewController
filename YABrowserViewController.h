@@ -40,4 +40,6 @@ IB_DESIGNABLE
 
 @property (nonatomic, strong) UINavigationController *navigationController;
 
+- (id)initWithConfiguration:(WKWebViewConfiguration *)configuration;
+
 @end
