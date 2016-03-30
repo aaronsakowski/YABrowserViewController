@@ -15,6 +15,8 @@
 
 @property (strong, nonatomic) UIProgressView *progressView;
 
+@property (nonatomic, copy) WKWebViewConfiguration *configuration;
+
 // Only appears when presented modally via -presentFromViewController:animated:completion:.
 @property (strong, nonatomic) UIBarButtonItem *closeButton;
 
@@ -40,6 +42,15 @@
 {
     if ((self = [super initWithCoder:coder])) {
         CommonInit(self);
+    }
+    return self;
+}
+
+- (id)initWithConfiguration:(WKWebViewConfiguration *)configuration
+{
+    if ((self = [super init])) {
+        CommonInit(self);
+        self.configuration = configuration;
     }
     return self;
 }
@@ -389,7 +400,14 @@ static void * KVOContext = &KVOContext;
 
 - (void)loadView
 {
-    WKWebView *webView = [WKWebView new];
+    WKWebView *webView;
+    if(self.configuration){
+        webView = [[WKWebView alloc] initWithFrame:CGRectZero configuration:self.configuration];
+    }
+    else{
+        webView = [WKWebView new];
+    }
+    
     webView.backgroundColor = [UIColor whiteColor];
     webView.allowsBackForwardNavigationGestures = YES;
     webView.navigationDelegate = self;
